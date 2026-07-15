@@ -81,10 +81,36 @@ function formatMoney(num) {
     return Math.round(num).toLocaleString('en-US');
 }
 
-// Update your module.exports block to include formatMoney
+// Helper function to safely pluralize or singularize item names based on counts
+function formatItemQuantityName(itemName, count) {
+    if (!itemName) return '';
+    
+    const trimmed = itemName.trim();
+    const lower = trimmed.toLowerCase();
+
+    // Words that should never be modified (e.g., Glass, Grass, Mycelium, Podzol, etc.)
+    const exceptions = ['grass', 'glass', 'mycelium', 'podzol', 'dirt', 'coarse dirt', 'sand', 'red sand', 'gravel', 'clay'];
+    if (exceptions.includes(lower)) {
+        return trimmed;
+    }
+
+    if (count > 1) {
+        if (lower.endsWith('s')) {
+            return trimmed;
+        }
+        return `${trimmed}s`;
+    } else {
+        if (lower.endsWith('s')) {
+            return trimmed.slice(0, -1);
+        }
+        return trimmed;
+    }
+}
+
 module.exports = {
     getEditDistance,
     tokenizeAndClean,
     splitMessage,
-    formatMoney
+    formatMoney,
+    formatItemQuantityName
 };

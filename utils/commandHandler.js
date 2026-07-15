@@ -1,7 +1,26 @@
-const { tokenizeAndClean, formatMoney } = require('./stringHelper');
+const { tokenizeAndClean, formatMoney, formatItemQuantityName } = require('./stringHelper');
 
 // List of high-value conversion elements to filter out by default
-const ELEMENTS = ['cobalt', 'oxygen', 'braden', 'helium'];
+const ELEMENTS = ['cobalt', 'oxygen', 'radon', 'berkelium'];
+
+// Helper function to format an item name with its sub_name if it exists
+function getItemDisplayName(entry) {
+    // Pluralize/singularize based on buy count
+    const formattedItem = formatItemQuantityName(entry.item, entry.buy_count || 1);
+    return entry.sub_name ? `${formattedItem} (${entry.sub_name})` : formattedItem;
+}
+
+// Helper function to dynamically format sell details depending on sell_item configurations
+function getSellDisplay(entry) {
+    const sellTarget = entry.sell_item || entry.item;
+    // Pluralize/singularize based on sell count
+    const formattedSellItem = formatItemQuantityName(sellTarget, entry.sell_count || 1);
+
+    if (entry.sell_item) {
+        return `Sell ${formattedSellItem}: **${formatMoney(entry.sell)}**`;
+    }
+    return `Sell: **${formatMoney(entry.sell)}**`;
+}
 
 // This function processes messages that start with a hyphen (-) and maps them to data filters.
 function handleMarketCommand(messageText, marketData) {
@@ -14,7 +33,6 @@ function handleMarketCommand(messageText, marketData) {
     const args = parts.slice(1).join(' ');
 
     // COMMAND: -help
-    // Displays a clean menu of all available commands, including raw lookups, alongside formatting syntax examples.
     if (command === '-help') {
         return `## 📖 Codys Market Bot Directory\n` +
                `Use the tools below to navigate and search the market server. You can type an item directly, or use a prefix (\`-\`) command.\n\n` +
@@ -23,7 +41,7 @@ function handleMarketCommand(messageText, marketData) {
                `Type any item name by itself without any prefixes. The bot will search the database and give you its exact floor, stall location, and price. If multiple items match, it will list them for you.\n` +
                `\`\`\`text\n` +
                `cobblestone\n` +
-               `diamond armor\n` +
+               `horse armor\n` +
                `\`\`\`\n` +
                `### __Core Search Commands__\n` +
                `• **\`-find <item>\`** \n` +
@@ -97,7 +115,6 @@ function handleMarketCommand(messageText, marketData) {
         const showElements = args.toLowerCase().includes('elements');
         let filteredData = [...marketData];
         
-        // If the user didn't explicitly request elements, filter them out.
         if (!showElements) {
             filteredData = filteredData.filter(entry => !ELEMENTS.includes(entry.item.toLowerCase()));
         }
@@ -107,9 +124,10 @@ function handleMarketCommand(messageText, marketData) {
             .sort((a, b) => b.buy - a.buy)
             .slice(0, limit);
 
-        const listText = topBuyItems.map((entry, idx) => 
-            `${idx + 1}. **${entry.item}** (Floor ${entry.floor}) | Buy Cost: **${formatMoney(entry.buy)}**`
-        ).join('\n');
+        const listText = topBuyItems.map((entry, idx) => {
+            const nameDisplay = getItemDisplayName(entry);
+            return `${idx + 1}. **${nameDisplay}** (Floor ${entry.floor}) | Buy Cost: **${formatMoney(entry.buy)}**`;
+        }).join('\n');
 
         const title = showElements ? `Top 10 Luxury Items (Including Elements)` : `Top 5 Luxury Items (Excluding Elements)`;
         return `💎 **${title}:**\n\n${listText}`;
@@ -120,7 +138,6 @@ function handleMarketCommand(messageText, marketData) {
         const showElements = args.toLowerCase().includes('elements');
         let filteredData = [...marketData];
         
-        // If the user didn't explicitly request elements, filter them out.
         if (!showElements) {
             filteredData = filteredData.filter(entry => !ELEMENTS.includes(entry.item.toLowerCase()));
         }
@@ -130,9 +147,13 @@ function handleMarketCommand(messageText, marketData) {
             .sort((a, b) => b.sell - a.sell)
             .slice(0, limit);
 
-        const listText = topSellItems.map((entry, idx) => 
-            `${idx + 1}. **${entry.item}** (Floor ${entry.floor}) | Sells For: **${formatMoney(entry.sell)}**`
-        ).join('\n');
+        const listText = topSellItems.map((entry, idx) => {
+            const nameDisplay = getItemDisplayName(entry);
+            const sellTarget = entry.sell_item || entry.item;
+            const formattedSellItem = formatItemQuantityName(sellTarget, entry.sell_count || 1);
+            const sellLabel = entry.sell_item ? `Sells For (${formattedSellItem})` : `Sells For`;
+            return `${idx + 1}. **${nameDisplay}** (Floor ${entry.floor}) | ${sellLabel}: **${formatMoney(entry.sell)}**`;
+        }).join('\n');
 
         const title = showElements ? `Top 10 Money Makers (Including Elements)` : `Top 5 Money Makers (Excluding Elements)`;
         return `💰 **${title}:**\n\n${listText}`;
@@ -145,9 +166,10 @@ function handleMarketCommand(messageText, marketData) {
             .sort((a, b) => a.buy - b.buy)
             .slice(0, 5);
 
-        const listText = cheapBuyItems.map((entry, idx) => 
-            `${idx + 1}. **${entry.item}** (Floor ${entry.floor}) | Buy Cost: **${formatMoney(entry.buy)}**`
-        ).join('\n');
+        const listText = cheapBuyItems.map((entry, idx) => {
+            const nameDisplay = getItemDisplayName(entry);
+            return `${idx + 1}. **${nameDisplay}** (Floor ${entry.floor}) | Buy Cost: **${formatMoney(entry.buy)}**`;
+        }).join('\n');
 
         return `🪙 **Top 5 Budget Choices (Lowest Buy Prices):**\n\n${listText}`;
     }
@@ -166,9 +188,11 @@ function handleMarketCommand(messageText, marketData) {
 
         if (matches.length === 0) return `❌ No items found matching "**${args}**".`;
 
-        const listText = matches.map(entry => 
-            `• **${entry.item}** (Floor ${entry.floor}, ${entry.location}) | Buy: **${formatMoney(entry.buy)}** | Sell: **${formatMoney(entry.sell)}**`
-        ).join('\n');
+        const listText = matches.map(entry => {
+            const nameDisplay = getItemDisplayName(entry);
+            const sellPart = getSellDisplay(entry);
+            return `• **${nameDisplay}** (Floor ${entry.floor}, ${entry.location}) | Buy: **${formatMoney(entry.buy)}** | ${sellPart}`;
+        }).join('\n');
 
         return `🔍 **Found matches for "${args}":**\n\n${listText}`;
     }
@@ -197,9 +221,11 @@ function handleMarketCommand(messageText, marketData) {
 
         if (floorNum && doorStr) {
             responseMessage = `## 🏢 Market Directory: Floor ${floorNum} (${doorStr})\n\n`;
-            responseMessage += matches.map(entry => 
-                `• **${entry.item}** | Buy: **${formatMoney(entry.buy)}** | Sell: **${formatMoney(entry.sell)}**`
-            ).join('\n');
+            responseMessage += matches.map(entry => {
+                const nameDisplay = getItemDisplayName(entry);
+                const sellPart = getSellDisplay(entry);
+                return `• **${nameDisplay}** | Buy: **${formatMoney(entry.buy)}** | ${sellPart}`;
+            }).join('\n');
             
             return responseMessage;
         }
@@ -216,9 +242,11 @@ function handleMarketCommand(messageText, marketData) {
             for (const door of uniqueDoors) {
                 const doorItems = matches.filter(entry => entry.location === door);
                 responseMessage += `\n### 🚪 __${door}__\n`;
-                responseMessage += doorItems.map(entry => 
-                    `• **${entry.item}** | Buy: **${formatMoney(entry.buy)}** | Sell: **${formatMoney(entry.sell)}**`
-                ).join('\n') + '\n';
+                responseMessage += doorItems.map(entry => {
+                    const nameDisplay = getItemDisplayName(entry);
+                    const sellPart = getSellDisplay(entry);
+                    return `• **${nameDisplay}** | Buy: **${formatMoney(entry.buy)}** | ${sellPart}`;
+                }).join('\n') + '\n';
             }
 
             return responseMessage;
@@ -232,9 +260,11 @@ function handleMarketCommand(messageText, marketData) {
             for (const floor of uniqueFloors) {
                 const floorItems = matches.filter(entry => entry.floor === floor);
                 responseMessage += `\n### 🏢 __Floor ${floor}__\n`;
-                responseMessage += floorItems.map(entry => 
-                    `• **${entry.item}** | Buy: **${formatMoney(entry.buy)}** | Sell: **${formatMoney(entry.sell)}**`
-                ).join('\n') + '\n';
+                responseMessage += floorItems.map(entry => {
+                    const nameDisplay = getItemDisplayName(entry);
+                    const sellPart = getSellDisplay(entry);
+                    return `• **${nameDisplay}** | Buy: **${formatMoney(entry.buy)}** | ${sellPart}`;
+                }).join('\n') + '\n';
             }
 
             return responseMessage;
@@ -255,7 +285,10 @@ function handleMarketCommand(messageText, marketData) {
 
         if (matches.length === 0) return `❌ No purchasable items found matching "**${args}**".`;
 
-        const listText = matches.map(entry => `• **${entry.item}** on **Floor ${entry.floor}** for **${formatMoney(entry.buy)}**`).join('\n');
+        const listText = matches.map(entry => {
+            const nameDisplay = getItemDisplayName(entry);
+            return `• **${nameDisplay}** on **Floor ${entry.floor}** for **${formatMoney(entry.buy)}**`;
+        }).join('\n');
         return `🛒 **Purchasable Items matching "${args}":**\n\n${listText}`;
     }
 
@@ -265,7 +298,8 @@ function handleMarketCommand(messageText, marketData) {
         
         const searchTokens = tokenizeAndClean(args);
         const matches = marketData.filter(entry => {
-            const itemTokens = tokenizeAndClean(entry.item);
+            const activeSellTarget = entry.sell_item || entry.item;
+            const itemTokens = tokenizeAndClean(activeSellTarget);
             return entry.sell > 0 && searchTokens.every(token => 
                 itemTokens.some(itemToken => itemToken.includes(token) || token.includes(itemToken))
             );
@@ -273,7 +307,11 @@ function handleMarketCommand(messageText, marketData) {
 
         if (matches.length === 0) return `❌ No items found that you can sell matching "**${args}**".`;
 
-        const listText = matches.map(entry => `• **${entry.item}** can be sold on **Floor ${entry.floor}** for **${formatMoney(entry.sell)}**`).join('\n');
+        const listText = matches.map(entry => {
+            const sellTarget = entry.sell_item || entry.item;
+            const formattedSellItem = formatItemQuantityName(sellTarget, entry.sell_count || 1);
+            return `• **${formattedSellItem}** can be sold on **Floor ${entry.floor}** (for **${getItemDisplayName(entry)}**) for **${formatMoney(entry.sell)}**`;
+        }).join('\n');
         return `💰 **Items you can sell matching "${args}":**\n\n${listText}`;
     }
 

@@ -3,7 +3,7 @@ const marketData = require('./market.json');
 const { splitMessage } = require('./utils/stringHelper');
 const { findExactOrPartialMatches, findCloseMatches } = require('./utils/marketMatcher');
 const { handleMarketCommand } = require('./utils/commandHandler');
-const { formatMoney } = require('./utils/stringHelper');
+const { formatMoney, formatItemQuantityName } = require('./utils/stringHelper');
 
 const STATUS_CHANNEL_ID = process.env.STATUS_CHANNEL_ID;
 const MARKET_CHANNEL_ID = process.env.MARKET_CHANNEL_ID;
@@ -67,8 +67,27 @@ client.on('messageCreate', async (message) => {
 
     if (matches.length === 1) {
         const foundItem = matches[0];
-        // Apply formatMoney to both buy and sell parameters
-        const response = `The **${foundItem.item}** is on the **${foundItem.floor} floor (${foundItem.location})**, this can be purchased for **${formatMoney(foundItem.buy)}** and sold for **${formatMoney(foundItem.sell)}**.`;
+        
+        // 1. Format the main item name based on its buy count
+        const baseBuyItem = foundItem.item;
+        const formattedBuyItem = formatItemQuantityName(baseBuyItem, foundItem.buy_count || 1);
+        const nameWithSub = foundItem.sub_name 
+            ? `${formattedBuyItem} (${foundItem.sub_name})` 
+            : formattedBuyItem;
+
+        // 2. Format the sell item name based on its sell count
+        const baseSellItem = foundItem.sell_item || foundItem.item;
+        const formattedSellItem = formatItemQuantityName(baseSellItem, foundItem.sell_count || 1);
+
+        let response = '';
+
+        // Check if there is a distinct sell item name configured
+        if (foundItem.sell_item) {
+            response = `The **${nameWithSub}** is on the **${foundItem.floor} floor** (**${foundItem.location}**), this can be purchased for **${formatMoney(foundItem.buy)}** or **${formattedSellItem}** sold for **${formatMoney(foundItem.sell)}**.`;
+        } else {
+            response = `The **${nameWithSub}** is on the **${foundItem.floor} floor** (**${foundItem.location}**), this can be purchased for **${formatMoney(foundItem.buy)}** or sold for **${formatMoney(foundItem.sell)}**.`;
+        }
+
         await message.reply(response);
         return;
     }

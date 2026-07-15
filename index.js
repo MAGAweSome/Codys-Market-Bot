@@ -9,6 +9,7 @@ const { saveMarketData, formatItemDetails } = require('./utils/adminSession');
 const STATUS_CHANNEL_ID = process.env.STATUS_CHANNEL_ID;
 const MARKET_CHANNEL_ID = process.env.MARKET_CHANNEL_ID;
 const ADMIN_CHANNEL_ID = process.env.ADMIN_CHANNEL_ID;
+const ALLOWED_ADMIN_IDS = process.env.ALLOWED_ADMIN_IDS ? process.env.ALLOWED_ADMIN_IDS.split(',') : [];
 
 const client = new Client({
     intents: [
@@ -57,6 +58,12 @@ client.on('messageCreate', async (message) => {
         const userId = message.author.id;
         const text = message.content.trim();
         const lowerText = text.toLowerCase();
+
+        // SECOND-LAYER BACKEND VERIFICATION: Validate user's ID against ALLOWED_ADMIN_IDS
+        if (!ALLOWED_ADMIN_IDS.includes(userId)) {
+            await message.reply('🛑 **Access Denied:** Your Discord User ID is not authorized to execute database modifications.');
+            return;
+        }
 
         // Let users reset or cancel at any time
         if (lowerText === 'cancel') {

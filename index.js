@@ -73,8 +73,27 @@ client.on('messageCreate', async (message) => {
     }
 
     // Standard User Lookup Engine
-    const userInput = message.content.trim();
-    const matches = findExactOrPartialMatches(userInput, marketData);
+    let userInput = message.content.trim();
+    
+    // Check if the user is explicitly requesting variants
+    const wantsVariants = userInput.toLowerCase().includes('-variant');
+    
+    // Clean the user input by removing the "-variant" flag if it exists
+    if (wantsVariants) {
+        userInput = userInput.replace(/-variant/gi, '').replace(/\s+/g, ' ').trim();
+    }
+
+    let matches = findExactOrPartialMatches(userInput, marketData);
+
+    // --- EXACT MATCH BYPASS ---
+    // Only run the exact match bypass if they DID NOT explicitly ask for variants
+    if (!wantsVariants) {
+        const exactMatch = matches.find(entry => entry.item.toLowerCase() === userInput.toLowerCase());
+        if (exactMatch) {
+            matches = [exactMatch]; // Force the search to only contain the single exact match
+        }
+    }
+    // ---------------------------------
 
     if (matches.length === 1) {
         const foundItem = matches[0];
@@ -87,6 +106,7 @@ client.on('messageCreate', async (message) => {
             ? `${formattedBuyItem} (${foundItem.sub_name})` 
             : formattedBuyItem;
 
+        // Check if the item name ends in "s" to decide between "is" or "are"
         const verb = nameWithSub.endsWith('s') || nameWithSub.endsWith(')') && nameWithSub.slice(0, nameWithSub.indexOf(' (')).endsWith('s') ? 'are' : 'is';
 
         const sellCount = foundItem.sell_count || 1;

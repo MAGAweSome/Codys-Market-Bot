@@ -5,7 +5,6 @@ const ELEMENTS = ['cobalt', 'oxygen', 'radon', 'berkelium'];
 
 // Helper function to format an item name with its sub_name if it exists
 function getItemDisplayName(entry) {
-    // Pluralize/singularize based on buy count
     const formattedItem = formatItemQuantityName(entry.item, entry.buy_count || 1);
     return entry.sub_name ? `${formattedItem} (${entry.sub_name})` : formattedItem;
 }
@@ -13,7 +12,6 @@ function getItemDisplayName(entry) {
 // Helper function to dynamically format sell details depending on sell_item configurations
 function getSellDisplay(entry) {
     const sellTarget = entry.sell_item || entry.item;
-    // Pluralize/singularize based on sell count
     const formattedSellItem = formatItemQuantityName(sellTarget, entry.sell_count || 1);
 
     if (entry.sell_item) {
@@ -38,10 +36,12 @@ function handleMarketCommand(messageText, marketData) {
                `Use the tools below to navigate and search the market server. You can type an item directly, or use a prefix (\`-\`) command.\n\n` +
                `### __Direct Item Lookup__\n` +
                `• **\`<item name>\`** \n` +
-               `Type any item name by itself without any prefixes. The bot will search the database and give you its exact floor, stall location, and price. If multiple items match, it will list them for you.\n` +
+               `Type any item name by itself without any prefixes. The bot will search the database and give you its exact floor, stall location, and price. If multiple items match, it will list them for you.\n\n` +
+               `💡 **Searching for Variants:**\n` +
+               `By default, if you type an item that has an exact match, the bot jumps straight to it. If you want to see all of its variants (like stairs, slabs, or other versions), add \`-variant\` to your search.\n` +
                `\`\`\`text\n` +
                `cobblestone\n` +
-               `horse armor\n` +
+               `cobblestone -variant\n` +
                `\`\`\`\n` +
                `### __Core Search Commands__\n` +
                `• **\`-find <item>\`** \n` +

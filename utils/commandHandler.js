@@ -44,6 +44,11 @@ function handleMarketCommand(messageText, marketData) {
                `cobblestone -variant\n` +
                `\`\`\`\n` +
                `### __Core Search Commands__\n` +
+               `• **\`-list <quantity> <item>, <quantity> <item>, ...\`** \n` +
+               `Calculates the total cost and location list for a project build. Automatically rounds up to matching store batch sizes.\n` +
+               `\`\`\`text\n` +
+               `-list 32 cobblestone, 10 obsidian, 5 smooth stone\n` +
+               `\`\`\`\n` +
                `• **\`-find <item>\`** \n` +
                `Lists all matching items alongside their locations and full trade values.\n` +
                `\`\`\`text\n` +
@@ -100,6 +105,108 @@ function handleMarketCommand(messageText, marketData) {
                `\`\`\`text\n` +
                `-stats\n` +
                `\`\`\``;
+    }
+
+    // COMMAND: -list <quantity> <item>, <quantity> <item>, ...
+    if (command === '-list') {
+        if (!args) return `❌ **Usage Error!** Provide a comma-separated list of items.\nExample: \`-list 32 cobblestone, 10 obsidian\``;
+
+        const rawEntries = args.split(',');
+        let totalPrice = 0;
+        let tableRows = [];
+        let missingItemsText = '';
+
+        for (const rawEntry of rawEntries) {
+            const cleanEntry = rawEntry.trim();
+            if (!cleanEntry) continue;
+
+            const match = cleanEntry.match(/^(\d+)\s+(.+)$/);
+            if (!match) {
+                missingItemsText += `• Could not parse entry: "\`${cleanEntry}\`" (Make sure it starts with a number, e.g., \`64 Stone\`)\n`;
+                continue;
+            }
+
+            const requestedQty = parseInt(match[1], 10);
+            const searchItemName = match[2].trim();
+
+            const searchTokens = tokenizeAndClean(searchItemName);
+            let itemMatches = marketData.filter(entry => {
+                const itemTokens = tokenizeAndClean(entry.item);
+                return searchTokens.every(token => 
+                    itemTokens.some(itemToken => itemToken.includes(token) || token.includes(itemToken))
+                );
+            });
+
+            const exact = itemMatches.find(entry => entry.item.toLowerCase() === searchItemName.toLowerCase());
+            if (exact) itemMatches = [exact];
+
+            if (itemMatches.length === 0 || itemMatches[0].buy === 0) {
+                missingItemsText += `• **${searchItemName}** is not purchasable or couldn't be found in the database.\n`;
+                continue;
+            }
+
+            if (itemMatches.length > 1) {
+                missingItemsText += `• **${searchItemName}** matched multiple items (${itemMatches.slice(0, 3).map(e => e.item).join(', ')}...). Please be more specific!\n`;
+                continue;
+            }
+
+            const marketItem = itemMatches[0];
+            const batchSize = marketItem.buy_count || 1;
+            const unitPrice = marketItem.buy;
+
+            const batchesNeeded = Math.ceil(requestedQty / batchSize);
+            const finalQtyToBuy = batchesNeeded * batchSize;
+            const itemCost = batchesNeeded * unitPrice;
+
+            totalPrice += itemCost;
+
+            const nameDisplay = getItemDisplayName(marketItem);
+            const locationStr = `F${marketItem.floor} (${marketItem.location})`;
+            
+            // Push structured data for the text table alignment
+            tableRows.push({
+                item: nameDisplay,
+                location: locationStr,
+                req: requestedQty.toString(),
+                buy: finalQtyToBuy.toString(),
+                cost: formatMoney(itemCost)
+            });
+        }
+
+        let finalResponse = `## 🧾 Project Materials Invoice\n\n`;
+        
+        if (tableRows.length > 0) {
+            // Calculate column padding dynamically based on longest text strings
+            const maxItem = Math.max(...tableRows.map(r => r.item.length), 4);
+            const maxLoc = Math.max(...tableRows.map(r => r.location.length), 8);
+            const maxReq = Math.max(...tableRows.map(r => r.req.length), 4);
+            const maxBuy = Math.max(...tableRows.map(r => r.buy.length), 4);
+
+            // Construct headers
+            let tableText = `\`\`\`text\n` +
+                `${'Item'.padEnd(maxItem)} | ${'Location'.padEnd(maxLoc)} | ${'Req'.padEnd(maxReq)} | ${'Buy'.padEnd(maxBuy)} | Cost\n` +
+                `${'-'.repeat(maxItem)}-+-${'-'.repeat(maxLoc)}-+-${'-'.repeat(maxReq)}-+-${'-'.repeat(maxBuy)}-+----------\n`;
+
+            // Append each item row matching our spacing constraints
+            for (const r of tableRows) {
+                tableText += `${r.item.padEnd(maxItem)} | ${r.location.padEnd(maxLoc)} | ${r.req.padEnd(maxReq)} | ${r.buy.padEnd(maxBuy)} | ${r.cost}\n`;
+            }
+            tableText += `\`\`\``;
+
+            finalResponse += `### 🛒 __Purchasing Guide__\n${tableText}\n`;
+        }
+        
+        if (missingItemsText) {
+            finalResponse += `### ⚠️ __Issues / Missing Entries__\n${missingItemsText}\n`;
+        }
+
+        if (tableRows.length > 0) {
+            finalResponse += `---\n### Total Estimated Cost: **${formatMoney(totalPrice)}**`;
+        } else if (!missingItemsText) {
+            return `❌ No valid items could be parsed from your list request.`;
+        }
+
+        return finalResponse;
     }
 
     // COMMAND: -stats

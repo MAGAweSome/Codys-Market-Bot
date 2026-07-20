@@ -1,7 +1,7 @@
 [
   {
     "floor": 1,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Deepslate Bricks",
     "buy": 180,
@@ -10,7 +10,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Deepslate Brick Slabs",
     "buy": 90,
@@ -19,7 +19,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Deepslate Brick Stairs",
     "buy": 90,
@@ -28,7 +28,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Deepslate Brick Walls",
     "buy": 180,
@@ -37,7 +37,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Polished Deepslate",
     "buy": 180,
@@ -46,7 +46,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Polished Deepslate Slabs",
     "buy": 90,
@@ -55,7 +55,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Polished Deepslate Stairs",
     "buy": 90,
@@ -64,7 +64,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Polished Deepslate Walls",
     "buy": 180,
@@ -73,7 +73,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Deepslate Tiles",
     "buy": 180,
@@ -82,7 +82,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Deepslate Tile Slabs",
     "buy": 90,
@@ -91,7 +91,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Deepslate Tile Stairs",
     "buy": 90,
@@ -100,7 +100,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Deepslate Tile Walls",
     "buy": 180,
@@ -109,7 +109,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Cracked Deepslate Tiles",
     "buy": 180,
@@ -118,7 +118,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Cobbled Deepslate",
     "buy": 180,
@@ -127,7 +127,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Cobbled Deepslate Slabs",
     "buy": 90,
@@ -136,7 +136,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Cobbled Deepslate Stairs",
     "buy": 90,
@@ -145,7 +145,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Cobbled Deepslate Walls",
     "buy": 180,
@@ -154,7 +154,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Deepslate",
     "buy": 180,
@@ -163,7 +163,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Grass",
     "buy": 90,
@@ -173,7 +173,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Mycelium",
     "buy": 90,
@@ -182,7 +182,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Podzol",
     "buy": 90,
@@ -191,7 +191,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Coarse Dirt",
     "buy": 90,
@@ -200,7 +200,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Mud",
     "buy": 200,
@@ -209,7 +209,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Packed Mud",
     "buy": 500,
@@ -218,7 +218,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Mud Bricks",
     "buy": 500,
@@ -227,7 +227,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Mud Brick Slabs",
     "buy": 250,
@@ -236,7 +236,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Mud Brick Stairs",
     "buy": 250,
@@ -245,7 +245,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Mud Brick Walls",
     "buy": 500,
@@ -254,7 +254,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Muddy Mangrove Roots",
     "buy": 500,
@@ -263,7 +263,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Mangrove Roots",
     "buy": 250,
@@ -272,7 +272,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Crimson Nylium",
     "buy": 200,
@@ -281,7 +281,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Warped Nylium",
     "buy": 200,
@@ -290,7 +290,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Cobblestone",
     "buy": 180,
@@ -299,7 +299,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Cobblestone Slabs",
     "buy": 90,
@@ -308,7 +308,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Cobblestone Stairs",
     "buy": 90,
@@ -317,7 +317,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Cobblestone Walls",
     "buy": 180,
@@ -326,7 +326,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Stone",
     "buy": 180,
@@ -335,7 +335,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Stone Slabs",
     "buy": 90,
@@ -344,7 +344,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Stone Stairs",
     "buy": 90,
@@ -353,7 +353,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Smooth Stone",
     "buy": 180,
@@ -362,7 +362,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Stone Bricks",
     "buy": 180,
@@ -371,7 +371,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Stone Brick Slabs",
     "buy": 90,
@@ -380,7 +380,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Stone Brick Stairs",
     "buy": 90,
@@ -389,7 +389,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Stone Brick Walls",
     "buy": 180,
@@ -398,7 +398,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Cracked Stone Bricks",
     "buy": 180,
@@ -407,7 +407,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Chiseled Stone Bricks",
     "buy": 180,
@@ -416,7 +416,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Mossy Cobblestone",
     "buy": 180,
@@ -425,7 +425,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Mossy Cobblestone Slabs",
     "buy": 90,
@@ -434,7 +434,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Mossy Cobblestone Stairs",
     "buy": 90,
@@ -443,7 +443,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Mossy Cobblestone Walls",
     "buy": 180,
@@ -452,7 +452,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 64,
     "item": "Mossy Cobblestone Bricks",
     "buy": 180,
@@ -461,7 +461,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 64,
     "item": "Mossy Stone Brick Slabs",
     "buy": 90,
@@ -470,7 +470,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 64,
     "item": "Mossy Stone Brick Stairs",
     "buy": 90,
@@ -479,7 +479,7 @@
   },
   {
     "floor": 1,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 64,
     "item": "Mossy Stone Brick Walls",
     "buy": 180,
@@ -488,7 +488,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Andesite",
     "buy": 220,
@@ -497,7 +497,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Andesite Stairs",
     "buy": 110,
@@ -506,7 +506,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Andesite Slabs",
     "buy": 110,
@@ -515,7 +515,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Andesite Walls",
     "buy": 220,
@@ -524,7 +524,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Polished Andesite",
     "buy": 220,
@@ -533,7 +533,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Polished Andesite Stairs",
     "buy": 110,
@@ -542,7 +542,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Polished Andesite Slabs",
     "buy": 110,
@@ -551,7 +551,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Granite",
     "buy": 220,
@@ -560,7 +560,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Granite Stairs",
     "buy": 110,
@@ -569,7 +569,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Granite Slabs",
     "buy": 110,
@@ -578,7 +578,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Granite Walls",
     "buy": 220,
@@ -587,7 +587,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Polished Granite",
     "buy": 220,
@@ -596,7 +596,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Polished Granite Stairs",
     "buy": 110,
@@ -605,7 +605,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Polished Granite Slabs",
     "buy": 110,
@@ -614,7 +614,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Diorite",
     "buy": 220,
@@ -623,7 +623,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Diorite Stairs",
     "buy": 110,
@@ -632,7 +632,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Diorite Slabs",
     "buy": 110,
@@ -641,7 +641,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Diorite Walls",
     "buy": 220,
@@ -650,7 +650,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Polished Diorite",
     "buy": 220,
@@ -659,7 +659,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Polished Diorite Stairs",
     "buy": 110,
@@ -668,7 +668,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Polished Diorite Slabs",
     "buy": 110,
@@ -677,7 +677,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Red Sand",
     "buy": 640,
@@ -686,7 +686,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Red Sandstone",
     "buy": 2600,
@@ -695,7 +695,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Red Smooth Sandstone",
     "buy": 2600,
@@ -704,7 +704,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Red Cut Sandstone",
     "buy": 2600,
@@ -713,7 +713,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Red Chiseled Sandstone",
     "buy": 2600,
@@ -722,7 +722,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Red Sandstone Stairs",
     "buy": 1300,
@@ -731,7 +731,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Red Sandstone Walls",
     "buy": 2600,
@@ -740,7 +740,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Red Sandstone Slabs",
     "buy": 1300,
@@ -749,7 +749,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Red Smooth Sandstone Slabs",
     "buy": 1300,
@@ -758,7 +758,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Red Cut Sandstone Slabs",
     "buy": 1300,
@@ -767,7 +767,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Red Smooth Sandstone Stairs",
     "buy": 1300,
@@ -776,7 +776,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Sand",
     "buy": 640,
@@ -785,7 +785,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Sandstone",
     "buy": 2600,
@@ -794,7 +794,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Smooth Sandstone",
     "buy": 2600,
@@ -803,7 +803,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Cut Sandstone",
     "buy": 2600,
@@ -812,7 +812,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Chiseled Sandstone",
     "buy": 2600,
@@ -821,7 +821,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Sandstone Stairs",
     "buy": 1300,
@@ -830,7 +830,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Sandstone Walls",
     "buy": 2600,
@@ -839,7 +839,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Sandstone Slabs",
     "buy": 1300,
@@ -848,7 +848,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Smooth Sandstone Slabs",
     "buy": 1300,
@@ -857,7 +857,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Cut Sandstone Slabs",
     "buy": 1300,
@@ -866,7 +866,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Smooth Sandstone Stairs",
     "buy": 1300,
@@ -875,7 +875,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Quartz",
     "buy": 640,
@@ -884,7 +884,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Quartz Blocks",
     "buy": 2600,
@@ -893,7 +893,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Quartz Stairs",
     "buy": 1300,
@@ -902,7 +902,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Quartz Slabs",
     "buy": 1300,
@@ -911,7 +911,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Smooth Quartz",
     "buy": 2600,
@@ -920,7 +920,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Smooth Quartz Stairs",
     "buy": 1300,
@@ -929,7 +929,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Smooth Quartz Slabs",
     "buy": 1300,
@@ -938,7 +938,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Quartz Bricks",
     "buy": 2600,
@@ -947,7 +947,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Quartz Pillars",
     "buy": 2600,
@@ -956,7 +956,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Chiseled Quartz",
     "buy": 2600,
@@ -965,7 +965,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 8,
     "item": "Coal Blocks",
     "buy": 800,
@@ -974,7 +974,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 8,
     "item": "Raw Copper Blocks",
     "buy": 800,
@@ -984,7 +984,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 8,
     "item": "Raw Iron Blocks",
     "buy": 900,
@@ -994,7 +994,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 8,
     "item": "Raw Gold Blocks",
     "buy": 1000,
@@ -1004,7 +1004,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 10,
     "item": "Lapis Blocks",
     "buy": 1200,
@@ -1013,7 +1013,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 8,
     "item": "Emerald Blocks",
     "buy": 3200,
@@ -1022,7 +1022,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 1,
     "item": "Diamond Block",
     "buy": 7000,
@@ -1032,7 +1032,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 16,
     "item": "Block of Amethyst",
     "buy": 4250,
@@ -1041,7 +1041,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 1,
     "item": "Ancient Debris",
     "buy": 15000,
@@ -1051,7 +1051,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 8,
     "item": "Redstone Blocks",
     "buy": 2000,
@@ -1060,7 +1060,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Oak Logs",
     "buy": 750,
@@ -1069,7 +1069,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Spruce Logs",
     "buy": 750,
@@ -1078,7 +1078,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Birch Logs",
     "buy": 750,
@@ -1087,7 +1087,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Jungle Logs",
     "buy": 750,
@@ -1096,7 +1096,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Acacia Logs",
     "buy": 750,
@@ -1105,7 +1105,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Dark Oak Logs",
     "buy": 550,
@@ -1114,7 +1114,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Mangrove Logs",
     "buy": 750,
@@ -1123,7 +1123,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Cherry Logs",
     "buy": 750,
@@ -1132,7 +1132,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Pale Oak Logs",
     "buy": 750,
@@ -1141,7 +1141,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Crimson Stems",
     "buy": 750,
@@ -1150,7 +1150,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Warped Stems",
     "buy": 750,
@@ -1159,7 +1159,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Bamboo",
     "buy": 750,
@@ -1168,7 +1168,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Oak Saplings",
     "buy": 100,
@@ -1177,7 +1177,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Spruce Saplings",
     "buy": 100,
@@ -1186,7 +1186,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Birch Saplings",
     "buy": 100,
@@ -1195,7 +1195,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Jungle Saplings",
     "buy": 100,
@@ -1204,7 +1204,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Acacia Saplings",
     "buy": 100,
@@ -1213,7 +1213,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Dark Oak Saplings",
     "buy": 100,
@@ -1222,7 +1222,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Mangrove Saplings",
     "buy": 100,
@@ -1231,7 +1231,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Cherry Saplings",
     "buy": 100,
@@ -1240,7 +1240,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Pale Oak Saplings",
     "buy": 100,
@@ -1249,7 +1249,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Crimson Fungus",
     "buy": 100,
@@ -1258,7 +1258,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Warped Fungus",
     "buy": 100,
@@ -1267,7 +1267,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 64,
     "item": "Clay Balls",
     "buy": 1000,
@@ -1276,7 +1276,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 64,
     "item": "Clay Blocks",
     "buy": 4000,
@@ -1285,7 +1285,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 64,
     "item": "Brick Blocks",
     "buy": 4000,
@@ -1294,7 +1294,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 64,
     "item": "Brick Slabs",
     "buy": 2000,
@@ -1303,7 +1303,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 64,
     "item": "Brick Stairs",
     "buy": 2000,
@@ -1312,7 +1312,7 @@
   },
   {
     "floor": 2,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 64,
     "item": "Brick Walls",
     "buy": 4000,
@@ -1321,7 +1321,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Polished Blackstone Bricks",
     "buy": 180,
@@ -1330,7 +1330,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Polished Blackstone Brick Slabs",
     "buy": 90,
@@ -1339,7 +1339,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Polished Blackstone Brick Stairs",
     "buy": 90,
@@ -1348,7 +1348,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Polished Blackstone Brick Walls",
     "buy": 180,
@@ -1357,7 +1357,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Cracked Polished Blackstone Bricks",
     "buy": 180,
@@ -1366,7 +1366,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Polished Blackstone",
     "buy": 180,
@@ -1375,7 +1375,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Polished Blackstone Slabs",
     "buy": 90,
@@ -1384,7 +1384,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Polished Blackstone Stairs",
     "buy": 90,
@@ -1393,7 +1393,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Polished Blackstone Walls",
     "buy": 180,
@@ -1402,7 +1402,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Chiseled Polished Blackstone",
     "buy": 180,
@@ -1411,7 +1411,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Blackstone",
     "buy": 180,
@@ -1420,7 +1420,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Blackstone Slabs",
     "buy": 90,
@@ -1429,7 +1429,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Blackstone Stairs",
     "buy": 90,
@@ -1438,7 +1438,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Blackstone Walls",
     "buy": 180,
@@ -1447,7 +1447,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Gilded Blackstone",
     "buy": 180,
@@ -1456,7 +1456,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Prismarine Shards",
     "buy": 3200,
@@ -1465,7 +1465,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Prismarine Crystals",
     "buy": 3200,
@@ -1474,7 +1474,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Prismarine",
     "buy": 12800,
@@ -1483,7 +1483,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Prismarine Walls",
     "buy": 12800,
@@ -1492,7 +1492,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Prismarine Stairs",
     "buy": 6400,
@@ -1501,7 +1501,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Prismarine Slabs",
     "buy": 6400,
@@ -1510,7 +1510,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Dark Prismarine",
     "buy": 25600,
@@ -1519,7 +1519,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Dark Prismarine Stairs",
     "buy": 12800,
@@ -1528,7 +1528,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Dark Prismarine Slabs",
     "buy": 12800,
@@ -1537,7 +1537,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Prismarine Bricks",
     "buy": 25600,
@@ -1546,7 +1546,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Prismarine Brick Stairs",
     "buy": 12800,
@@ -1555,7 +1555,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Prismarine Brick Slabs",
     "buy": 12800,
@@ -1564,7 +1564,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Sea Lanterns",
     "buy": 12800,
@@ -1573,7 +1573,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Resin Clumps",
     "buy": 640,
@@ -1582,7 +1582,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Resin Blocks",
     "buy": 6000,
@@ -1591,7 +1591,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Resin Bricks",
     "buy": 1280,
@@ -1600,7 +1600,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Resin Brick Blocks",
     "buy": 12000,
@@ -1609,7 +1609,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Resin Brick Walls",
     "buy": 12000,
@@ -1618,7 +1618,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Resin Brick Stairs",
     "buy": 6000,
@@ -1627,7 +1627,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Resin Brick Slabs",
     "buy": 6000,
@@ -1636,7 +1636,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Chiseled Resin Bricks",
     "buy": 12000,
@@ -1645,7 +1645,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "White Dye",
     "buy": 100,
@@ -1654,7 +1654,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Black Dye",
     "buy": 100,
@@ -1663,7 +1663,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Light Gray Dye",
     "buy": 100,
@@ -1672,7 +1672,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Gray Dye",
     "buy": 100,
@@ -1681,7 +1681,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Light Blue Dye",
     "buy": 100,
@@ -1690,7 +1690,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Blue Dye",
     "buy": 100,
@@ -1699,7 +1699,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Cyan Dye",
     "buy": 100,
@@ -1708,7 +1708,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Brown Dye",
     "buy": 100,
@@ -1717,7 +1717,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Red Dye",
     "buy": 100,
@@ -1726,7 +1726,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Orange Dye",
     "buy": 100,
@@ -1735,7 +1735,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Lime Dye",
     "buy": 100,
@@ -1744,7 +1744,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Green Dye",
     "buy": 100,
@@ -1753,7 +1753,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Yellow Dye",
     "buy": 100,
@@ -1762,7 +1762,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Pink Dye",
     "buy": 100,
@@ -1771,7 +1771,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Magenta Dye",
     "buy": 100,
@@ -1780,7 +1780,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Purple Dye",
     "buy": 100,
@@ -1789,7 +1789,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Tuff",
     "buy": 180,
@@ -1798,7 +1798,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Tuff Slabs",
     "buy": 90,
@@ -1807,7 +1807,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Tuff Stairs",
     "buy": 90,
@@ -1816,7 +1816,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Tuff Walls",
     "buy": 180,
@@ -1825,7 +1825,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Chiseled Tuff",
     "buy": 180,
@@ -1834,7 +1834,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Polished Tuff",
     "buy": 180,
@@ -1843,7 +1843,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Polished Tuff Slabs",
     "buy": 90,
@@ -1852,7 +1852,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Polished Tuff Stairs",
     "buy": 90,
@@ -1861,7 +1861,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Polished Tuff Walls",
     "buy": 180,
@@ -1870,7 +1870,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 64,
     "item": "Mossy Stone Bricks",
     "buy": 180,
@@ -1879,7 +1879,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 64,
     "item": "Mossy Stone Brick Slabs",
     "buy": 90,
@@ -1888,7 +1888,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 64,
     "item": "Mossy Stone Brick Stairs",
     "buy": 90,
@@ -1897,7 +1897,7 @@
   },
   {
     "floor": 3,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 64,
     "item": "Mossy Stone Brick Walls",
     "buy": 180,
@@ -1906,7 +1906,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 8,
     "item": "Raw Chicken",
     "buy": 80,
@@ -1916,7 +1916,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 8,
     "item": "Raw Beef",
     "buy": 120,
@@ -1926,7 +1926,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 8,
     "item": "Raw Porkchop",
     "buy": 120,
@@ -1936,7 +1936,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 8,
     "item": "Raw Cod",
     "buy": 75,
@@ -1946,7 +1946,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 8,
     "item": "Raw Salmon",
     "buy": 75,
@@ -1956,7 +1956,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 8,
     "item": "Raw Rabbit",
     "buy": 50,
@@ -1966,7 +1966,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 8,
     "item": "Raw Mutton",
     "buy": 75,
@@ -1976,7 +1976,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Wheat Seeds",
     "buy": 640,
@@ -1986,7 +1986,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 10,
     "item": "Beetroot Seeds",
     "buy": 100,
@@ -1996,7 +1996,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 16,
     "item": "Potatoes",
     "buy": 200,
@@ -2005,7 +2005,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 16,
     "item": "Cactus",
     "buy": 400,
@@ -2014,7 +2014,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 16,
     "item": "Carrots",
     "buy": 200,
@@ -2023,7 +2023,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 10,
     "item": "Melon Seeds",
     "buy": 100,
@@ -2033,7 +2033,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 10,
     "item": "Pumpkin Seeds",
     "buy": 100,
@@ -2043,7 +2043,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 10,
     "item": "Cocoa Beans",
     "buy": 100,
@@ -2052,7 +2052,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 10,
     "item": "Sugar Cane",
     "buy": 100,
@@ -2061,7 +2061,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 10,
     "item": "Kelp",
     "buy": 500,
@@ -2070,7 +2070,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 18,
     "item": "Nether Warts",
     "buy": 200,
@@ -2079,7 +2079,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 10,
     "item": "Chorus Flower",
     "buy": 800,
@@ -2089,7 +2089,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 16,
     "item": "Glow Berries",
     "buy": 750,
@@ -2098,7 +2098,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 16,
     "item": "Sweet Berries",
     "buy": 750,
@@ -2107,7 +2107,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 8,
     "item": "Hay Bale",
     "buy": 200,
@@ -2116,7 +2116,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 16,
     "item": "Baked Potatoes",
     "buy": 600,
@@ -2125,7 +2125,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Poisonous Potato",
     "buy": 6400,
@@ -2134,7 +2134,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Carved Pumpkin",
     "buy": 1280,
@@ -2143,7 +2143,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Jack o'Lanterns",
     "buy": 1950,
@@ -2152,7 +2152,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Dried Kelp",
     "buy": 1000,
@@ -2161,7 +2161,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 8,
     "item": "Dried Kelp Blocks",
     "buy": 1200,
@@ -2170,7 +2170,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Popped Chorus Fruits",
     "buy": 1625,
@@ -2179,7 +2179,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Cake",
     "buy": 6400,
@@ -2188,7 +2188,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Moss Blocks",
     "buy": 100,
@@ -2197,7 +2197,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Moss Carpet",
     "buy": 100,
@@ -2206,7 +2206,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Pale Moss Block",
     "buy": 100,
@@ -2215,7 +2215,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Pale Moss Carpet",
     "buy": 100,
@@ -2224,7 +2224,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Pale Hanging Moss",
     "buy": 100,
@@ -2233,7 +2233,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Bush",
     "buy": 100,
@@ -2242,7 +2242,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Pink Petals",
     "buy": 100,
@@ -2251,7 +2251,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Wild Flowers",
     "buy": 100,
@@ -2260,7 +2260,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Lily of the Valleys",
     "buy": 100,
@@ -2269,7 +2269,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Azure Bluets",
     "buy": 100,
@@ -2278,7 +2278,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Blue Orchids",
     "buy": 100,
@@ -2287,7 +2287,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Allium",
     "buy": 100,
@@ -2296,7 +2296,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Vines",
     "buy": 100,
@@ -2305,7 +2305,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Lily Pads",
     "buy": 100,
@@ -2314,7 +2314,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Firefly Bush",
     "buy": 100,
@@ -2323,7 +2323,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Cactus Flower",
     "buy": 100,
@@ -2332,7 +2332,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Open Eye Blossoms",
     "buy": 100,
@@ -2342,7 +2342,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Small Drip Leafs",
     "buy": 100,
@@ -2351,7 +2351,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Big Drip Leaves",
     "buy": 100,
@@ -2360,7 +2360,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Spore Blossoms",
     "buy": 100,
@@ -2369,7 +2369,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Flowering Azaleas",
     "buy": 100,
@@ -2378,7 +2378,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Torch Flowers",
     "buy": 100,
@@ -2387,7 +2387,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Pitcher Plants",
     "buy": 100,
@@ -2396,7 +2396,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Weeping Vines",
     "buy": 100,
@@ -2405,7 +2405,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Twisting Vines",
     "buy": 100,
@@ -2414,7 +2414,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Dead Bush",
     "buy": 100,
@@ -2423,7 +2423,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 1,
     "item": "Steve Head",
     "buy": 5000,
@@ -2432,7 +2432,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 1,
     "item": "Skeleton Head",
     "buy": 5000,
@@ -2441,7 +2441,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 1,
     "item": "Zombie Head",
     "buy": 5000,
@@ -2450,7 +2450,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 1,
     "item": "Wither Skeleton Head",
     "buy": 1500,
@@ -2459,7 +2459,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 1,
     "item": "Piglin Head",
     "buy": 5000,
@@ -2468,7 +2468,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 1,
     "item": "Creeper Head",
     "buy": 5000,
@@ -2477,7 +2477,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 1,
     "item": "Dragon Head",
     "buy": 5000,
@@ -2486,7 +2486,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 1,
     "item": "Music Disc Mall",
     "buy": 100,
@@ -2495,7 +2495,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 1,
     "item": "Music Disc Mellohi",
     "buy": 100,
@@ -2504,7 +2504,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 9,
     "item": "Music Disc Stall",
     "buy": 100,
@@ -2513,7 +2513,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 1,
     "item": "Music Disc Strad",
     "buy": 100,
@@ -2522,7 +2522,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 1,
     "item": "Music Disc Ward",
     "buy": 100,
@@ -2531,7 +2531,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 1,
     "item": "Music Disc Wait",
     "buy": 100,
@@ -2540,7 +2540,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 1,
     "item": "Music Disc Pigstep",
     "buy": 100,
@@ -2549,7 +2549,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 1,
     "item": "Music Disc Otherside",
     "buy": 100,
@@ -2558,7 +2558,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 1,
     "item": "Music Disc Relic",
     "buy": 100,
@@ -2567,7 +2567,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 1,
     "item": "Music Disc Precipice",
     "buy": 100,
@@ -2576,7 +2576,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 1,
     "item": "Music Disc Tears",
     "buy": 100,
@@ -2585,7 +2585,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 1,
     "item": "Music Disc 11",
     "buy": 100,
@@ -2594,7 +2594,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 1,
     "item": "Music Disc 13",
     "buy": 100,
@@ -2603,7 +2603,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 9,
     "item": "Music Disc 5 Fragments",
     "buy": 100,
@@ -2612,7 +2612,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 1,
     "item": "Music Disc 5",
     "buy": 100,
@@ -2621,7 +2621,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 1,
     "item": "Music Disc Blocks",
     "buy": 100,
@@ -2630,7 +2630,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 1,
     "item": "Music Disc Cat",
     "buy": 100,
@@ -2639,7 +2639,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 1,
     "item": "Music Disc Chirp",
     "buy": 100,
@@ -2648,7 +2648,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 1,
     "item": "Music Disc Creator",
     "buy": 100,
@@ -2657,7 +2657,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 1,
     "item": "Music Disc Creator Music Box",
     "buy": 100,
@@ -2666,7 +2666,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 1,
     "item": "Music Disc Fear",
     "buy": 100,
@@ -2675,7 +2675,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 1,
     "item": "Music Disc Lava Chicken",
     "buy": 100,
@@ -2684,7 +2684,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 1,
     "item": "Music Disc Bounce",
     "buy": 100,
@@ -2693,7 +2693,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 1,
     "item": "Armor Trim: Bolt",
     "sub_item": "Bolt Trim",
@@ -2703,7 +2703,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 1,
     "item": "Armor Trim: Eye",
     "sub_item": "Eye Trim",
@@ -2713,7 +2713,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 1,
     "item": "Armor Trim: Flow",
     "sub_item": "Flow Trim",
@@ -2723,7 +2723,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 1,
     "item": "Armor Trim: Rib",
     "sub_item": "Rib Trim",
@@ -2733,7 +2733,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 1,
     "item": "Armor Trim: Silence",
     "sub_item": "Silence Trim",
@@ -2743,7 +2743,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 1,
     "item": "Armor Trim: Snout",
     "sub_item": "Snout Trim",
@@ -2753,7 +2753,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 1,
     "item": "Armor Trim: Spire",
     "sub_item": "Spire Trim",
@@ -2763,7 +2763,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 1,
     "item": "Armor Trim: Tide",
     "sub_item": "Tide Trim",
@@ -2773,7 +2773,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 1,
     "item": "Armor Trim: Ward",
     "sub_item": "Ward Trim",
@@ -2783,7 +2783,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Armor Trim: Sentry",
     "sub_item": "Sentry Trim",
@@ -2793,7 +2793,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Armor Trim: Vex",
     "sub_item": "Vex Trim",
@@ -2803,7 +2803,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Armor Trim: Wild",
     "sub_item": "Wild Trim",
@@ -2813,7 +2813,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Armor Trim: Coast",
     "sub_item": "Coast Trim",
@@ -2823,7 +2823,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Armor Trim: Dune",
     "sub_item": "Dune Trim",
@@ -2833,7 +2833,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Armor Trim: Wayfinder",
     "sub_item": "Wayfinder Trim",
@@ -2843,7 +2843,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Armor Trim: Shaper",
     "sub_item": "Shaper Trim",
@@ -2853,7 +2853,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Armor Trim: Razor",
     "sub_item": "Razor Trim",
@@ -2863,7 +2863,7 @@
   },
   {
     "floor": 4,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Armor Trim: Host",
     "sub_item": "Host Trim",
@@ -2873,7 +2873,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Blaze Rods",
     "buy": 6600,
@@ -2882,7 +2882,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Ghast Tears",
     "buy": 6400,
@@ -2891,7 +2891,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Magma Cream",
     "buy": 6400,
@@ -2900,7 +2900,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 64,
     "item": "Shroomlight",
     "buy": 640,
@@ -2909,7 +2909,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 1,
     "item": "Nether Star",
     "buy": 26000,
@@ -2918,7 +2918,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Basalt",
     "buy": 360,
@@ -2927,7 +2927,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Polished Basalt",
     "buy": 360,
@@ -2936,7 +2936,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 64,
     "item": "Smooth Basalt",
     "buy": 360,
@@ -2945,7 +2945,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Netherbrick",
     "buy": 400,
@@ -2954,7 +2954,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Nether Bricks",
     "buy": 1500,
@@ -2963,7 +2963,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Nether Brick Wall",
     "buy": 1500,
@@ -2972,7 +2972,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Nether Brick Stairs",
     "buy": 750,
@@ -2981,7 +2981,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Nether Brick Fence",
     "buy": 750,
@@ -2990,7 +2990,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Nether Brick Slab",
     "buy": 750,
@@ -2999,7 +2999,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Chiseled Nether Bricks",
     "buy": 1500,
@@ -3008,7 +3008,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 64,
     "item": "Cracked Nether Bricks",
     "buy": 1500,
@@ -3017,7 +3017,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Red Nether Brick",
     "buy": 750,
@@ -3026,7 +3026,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Red Nether Brick Wall",
     "buy": 750,
@@ -3035,7 +3035,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Red Nether Brick Stairs",
     "buy": 375,
@@ -3044,7 +3044,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 64,
     "item": "Red Nether Brick Slab",
     "buy": 375,
@@ -3053,7 +3053,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Netherrack",
     "buy": 360,
@@ -3062,7 +3062,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Soul Sand",
     "buy": 600,
@@ -3071,7 +3071,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Soul Soil",
     "buy": 600,
@@ -3080,7 +3080,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Nether Wart Block",
     "buy": 1300,
@@ -3089,7 +3089,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Warped Wart Block",
     "buy": 1300,
@@ -3098,7 +3098,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Glowstone",
     "buy": 800,
@@ -3107,7 +3107,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 10,
     "item": "Obsidian",
     "buy": 1000,
@@ -3116,7 +3116,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 12,
     "item": "Crying Obsidian",
     "buy": 1500,
@@ -3125,7 +3125,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Magma Block",
     "buy": 360,
@@ -3134,7 +3134,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Snow Block",
     "buy": 640,
@@ -3143,7 +3143,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 64,
     "item": "Ice",
     "buy": 6400,
@@ -3153,7 +3153,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 1,
     "item": "Powdered Snow Bucket",
     "buy": 200,
@@ -3162,7 +3162,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Arrows",
     "buy": 200,
@@ -3171,7 +3171,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Bone Block",
     "buy": 6400,
@@ -3180,7 +3180,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Slimeball",
     "buy": 640,
@@ -3189,7 +3189,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Cobweb",
     "buy": 640,
@@ -3199,7 +3199,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Leather",
     "buy": 640,
@@ -3208,7 +3208,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 8,
     "item": "Rabbit's Foot",
     "buy": 400,
@@ -3217,7 +3217,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Rotten Flesh",
     "buy": 200,
@@ -3226,7 +3226,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Gunpowder",
     "buy": 6400,
@@ -3235,7 +3235,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Feather",
     "buy": 64,
@@ -3244,7 +3244,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Spider Eye",
     "buy": 640,
@@ -3253,7 +3253,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Sugar",
     "buy": 640,
@@ -3262,7 +3262,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Honey Bottle",
     "buy": 640,
@@ -3271,7 +3271,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Honeycomb",
     "buy": 640,
@@ -3280,7 +3280,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Honey Block",
     "buy": 2050,
@@ -3289,7 +3289,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Honeycomb Block",
     "buy": 2050,
@@ -3298,7 +3298,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 1,
     "item": "Beehive",
     "buy": 250,
@@ -3307,7 +3307,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 1,
     "item": "Bee Nest",
     "buy": 500,
@@ -3316,7 +3316,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Tropical Fish",
     "buy": 640,
@@ -3325,7 +3325,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Pufferfish",
     "buy": 640,
@@ -3334,7 +3334,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Sea Pickles",
     "buy": 180,
@@ -3343,7 +3343,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Ink Sacs",
     "buy": 650,
@@ -3352,7 +3352,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "Glow Ink Sacs",
     "buy": 6400,
@@ -3361,7 +3361,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 5,
     "item": "Turtle Scute",
     "buy": 500,
@@ -3370,7 +3370,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 1,
     "item": "Turtle Shell",
     "buy": 500,
@@ -3379,7 +3379,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 1,
     "item": "Conduit",
     "buy": 20000,
@@ -3388,7 +3388,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 1,
     "item": "Copper Nautilus Armor",
     "buy": 500,
@@ -3397,7 +3397,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 1,
     "item": "Iron Nautilus Armor",
     "buy": 600,
@@ -3406,7 +3406,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 1,
     "item": "Golden Nautilus Armor",
     "buy": 700,
@@ -3415,7 +3415,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 1,
     "item": "Diamond Nautilus Armor",
     "buy": 800,
@@ -3424,7 +3424,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 6,
     "item": "Armadillo Scute",
     "buy": 600,
@@ -3433,7 +3433,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Wolf Armor",
     "buy": 250,
@@ -3442,7 +3442,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Leather Horse Armor",
     "buy": 130,
@@ -3451,7 +3451,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Copper Horse Armor",
     "buy": 500,
@@ -3460,7 +3460,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Iron Horse Armor",
     "buy": 600,
@@ -3469,7 +3469,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Gold Horse Armor",
     "buy": 700,
@@ -3478,7 +3478,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Diamond Horse Armor",
     "buy": 800,
@@ -3487,7 +3487,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "White Ghast Harness",
     "buy": 150,
@@ -3496,7 +3496,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Lead",
     "buy": 200,
@@ -3505,7 +3505,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Name Tag",
     "buy": 500,
@@ -3514,7 +3514,7 @@
   },
   {
     "floor": 5,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Saddle",
     "buy": 500,
@@ -3523,7 +3523,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 1,
     "item": "Cobalt",
     "buy": 1100000,
@@ -3532,7 +3532,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 1,
     "item": "Oxygen",
     "buy": 11000000,
@@ -3541,7 +3541,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 1,
     "item": "Radon",
     "buy": 110000000,
@@ -3550,7 +3550,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 1,
     "item": "Berkelium",
     "buy": 1100000000,
@@ -3559,7 +3559,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 1,
     "item": "Frog Egg",
     "buy": 8000,
@@ -3568,7 +3568,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 1,
     "item": "Goat Egg",
     "buy": 8000,
@@ -3577,7 +3577,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 1,
     "item": "Armadillo Egg",
     "buy": 8000,
@@ -3586,7 +3586,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 1,
     "item": "Panda Egg",
     "buy": 8000,
@@ -3595,7 +3595,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 1,
     "item": "Turtle Egg",
     "buy": 8000,
@@ -3604,7 +3604,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 1,
     "item": "Dolphin Egg",
     "buy": 8000,
@@ -3613,7 +3613,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 1,
     "item": "Axolotl",
     "buy": 8000,
@@ -3622,7 +3622,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 1,
     "item": "Squid Egg",
     "buy": 8000,
@@ -3631,7 +3631,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 1,
     "item": "Glow Squid Egg",
     "buy": 8000,
@@ -3640,7 +3640,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 1,
     "item": "Parrot Egg",
     "buy": 8000,
@@ -3649,7 +3649,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 1,
     "item": "Camel Egg",
     "buy": 8000,
@@ -3658,7 +3658,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 1,
     "item": "Allay Egg",
     "buy": 8000,
@@ -3667,7 +3667,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 1,
     "item": "Strider Egg",
     "buy": 8000,
@@ -3676,7 +3676,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 1,
     "item": "Llama Egg",
     "buy": 8000,
@@ -3685,7 +3685,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 1,
     "item": "Horse Egg",
     "buy": 8000,
@@ -3694,7 +3694,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 1,
     "item": "Wolf Egg",
     "buy": 8000,
@@ -3703,7 +3703,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 1,
     "item": "Cat Egg",
     "buy": 8000,
@@ -3712,7 +3712,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 1,
     "item": "Fox Egg",
     "buy": 8000,
@@ -3721,7 +3721,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 1,
     "item": "Dried Ghast",
     "buy": 1000,
@@ -3730,7 +3730,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 1,
     "item": "Chicken Egg",
     "buy": 8000,
@@ -3739,7 +3739,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 1,
     "item": "Cow Egg",
     "buy": 8000,
@@ -3748,7 +3748,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 1,
     "item": "Sheep Egg",
     "buy": 8000,
@@ -3757,7 +3757,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 1,
     "item": "Pig Egg",
     "buy": 8000,
@@ -3766,7 +3766,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 1,
     "item": "Bee Egg",
     "buy": 8000,
@@ -3775,7 +3775,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 1,
     "item": "Mooshroom Egg",
     "buy": 8000,
@@ -3784,7 +3784,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 1,
     "item": "Rabbit Egg",
     "buy": 8000,
@@ -3793,7 +3793,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Bottle o' Enchanting",
     "buy": 5000,
@@ -3802,7 +3802,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Pointed Dripstone",
     "buy": 6400,
@@ -3811,7 +3811,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 5,
     "item": "Phantom Membrane",
     "buy": 10000,
@@ -3820,7 +3820,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Wind Charges",
     "buy": 6400,
@@ -3829,7 +3829,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 64,
     "item": "Super Fertilizer",
     "buy": 3200,
@@ -3838,7 +3838,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 8,
     "item": "Enchanted Golden Apple",
     "sub_item": "Notch Apple",
@@ -3848,7 +3848,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 2,
     "item": "Totem of Undying",
     "buy": 8000,
@@ -3857,7 +3857,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 1,
     "item": "Trident",
     "buy": 5000,
@@ -3866,7 +3866,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 1,
     "item": "Mace",
     "buy": 50000,
@@ -3875,7 +3875,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 1,
     "item": "Netherite Upgrade",
     "buy": 20000,
@@ -3884,7 +3884,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 1,
     "item": "Mob Spawner",
     "buy": 10000,
@@ -3893,7 +3893,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 8,
     "item": "Dragon's Breath",
     "buy": 2000,
@@ -3902,7 +3902,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 1,
     "item": "Dragon Egg",
     "buy": 5000,
@@ -3911,7 +3911,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 16,
     "item": "Ender Pearl",
     "buy": 1600,
@@ -3920,7 +3920,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 1,
     "item": "Elytra",
     "buy": 5000,
@@ -3929,7 +3929,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 6",
+    "location": "Pink Door",
     "buy_count": 2,
     "item": "Shulker Shells",
     "buy": 20000,
@@ -3939,7 +3939,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Sculk",
     "buy": 5000,
@@ -3948,7 +3948,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Sculk Vein",
     "buy": 3000,
@@ -3957,7 +3957,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Sculk Sensor",
     "buy": 6400,
@@ -3966,7 +3966,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Sculk Shrieker",
     "buy": 6400,
@@ -3975,7 +3975,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 1,
     "item": "Sculk Catalyst",
     "buy": 10000,
@@ -3984,7 +3984,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 7",
+    "location": "White Door",
     "buy_count": 64,
     "item": "Reinforced Deepslate",
     "buy": 10000,
@@ -3993,7 +3993,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Purpur Blocks",
     "buy": 1625,
@@ -4002,7 +4002,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Purpur Pillars",
     "buy": 1625,
@@ -4011,7 +4011,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Purpur Stairs",
     "buy": 810,
@@ -4020,7 +4020,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 8",
+    "location": "Green Door",
     "buy_count": 64,
     "item": "Purpur Slabs",
     "buy": 810,
@@ -4029,7 +4029,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "End Stone",
     "buy": 640,
@@ -4038,7 +4038,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "End Stone Bricks",
     "buy": 640,
@@ -4047,7 +4047,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "End Stone Brick Wall",
     "buy": 640,
@@ -4056,7 +4056,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "End Stone Brick Stairs",
     "buy": 320,
@@ -4065,7 +4065,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 64,
     "item": "End Stone Brick Slabs",
     "buy": 320,
@@ -4074,7 +4074,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 64,
     "item": "Ochre Froglight",
     "buy": 6400,
@@ -4083,7 +4083,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 64,
     "item": "Pearlescent Froglight",
     "buy": 6400,
@@ -4092,7 +4092,7 @@
   },
   {
     "floor": 6,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 64,
     "item": "Verdant Froglight",
     "buy": 6400,
@@ -4101,7 +4101,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 1,
     "item": "Zombie Egg",
     "buy": 8000,
@@ -4110,7 +4110,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 1,
     "item": "Husk Egg",
     "buy": 8000,
@@ -4119,7 +4119,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 1",
+    "location": "Black Door",
     "buy_count": 1,
     "item": "Drowned Egg",
     "buy": 8000,
@@ -4128,7 +4128,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 1,
     "item": "Zombie Villager Egg",
     "buy": 8000,
@@ -4137,7 +4137,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 1,
     "item": "Witch Egg",
     "buy": 8000,
@@ -4146,7 +4146,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 1,
     "item": "Vindicator Egg",
     "buy": 8000,
@@ -4155,7 +4155,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 2",
+    "location": "Red Door",
     "buy_count": 1,
     "item": "Pillager Egg",
     "buy": 8000,
@@ -4164,7 +4164,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 1,
     "item": "Magma Cube Egg",
     "buy": 8000,
@@ -4173,7 +4173,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 1,
     "item": "Slime Egg",
     "buy": 8000,
@@ -4182,7 +4182,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 1,
     "item": "Blaze Egg",
     "buy": 8000,
@@ -4191,7 +4191,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 1,
     "item": "Breeze Egg",
     "buy": 8000,
@@ -4200,7 +4200,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 3",
+    "location": "Purple Door",
     "buy_count": 1,
     "item": "Sulfur Cube Egg",
     "buy": 8000,
@@ -4209,7 +4209,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 1,
     "item": "Polar Bear Egg",
     "buy": 8000,
@@ -4218,7 +4218,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 1,
     "item": "Creeper Egg",
     "buy": 8000,
@@ -4227,7 +4227,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 1,
     "item": "Cave Spider Egg",
     "buy": 8000,
@@ -4236,7 +4236,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 4",
+    "location": "Brown Door",
     "buy_count": 1,
     "item": "Guardian Egg",
     "buy": 8000,
@@ -4245,7 +4245,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 1,
     "item": "Skeleton Egg",
     "buy": 8000,
@@ -4254,7 +4254,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 1,
     "item": "Stray Egg",
     "buy": 8000,
@@ -4263,7 +4263,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 1,
     "item": "Bogged Egg",
     "buy": 8000,
@@ -4272,7 +4272,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 5",
+    "location": "Orange Door",
     "buy_count": 1,
     "item": "Wither Skeleton Egg",
     "buy": 8000,
@@ -4281,7 +4281,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 4,
     "item": "Potion of Healing",
     "buy": 400,
@@ -4290,7 +4290,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 4,
     "item": "Potion of Fire Resistance",
     "buy": 600,
@@ -4299,7 +4299,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 4,
     "item": "Potion of Water Breathing",
     "buy": 600,
@@ -4308,7 +4308,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 4,
     "item": "Potion of Swiftness",
     "buy": 700,
@@ -4317,7 +4317,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 4,
     "item": "Potion of Strength",
     "buy": 800,
@@ -4326,7 +4326,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 1,
     "item": "Potion of Regeneration",
     "buy": 1000,
@@ -4335,7 +4335,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 4,
     "item": "Potion of Invisibility",
     "buy": 500,
@@ -4344,7 +4344,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 4,
     "item": "Splash Potion of Weakness",
     "buy": 800,
@@ -4353,7 +4353,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 4,
     "item": "Splash Potion of Swiftness",
     "buy": 600,
@@ -4362,7 +4362,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 4,
     "item": "Splash Potion of Poison",
     "buy": 1000,
@@ -4371,7 +4371,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 4,
     "item": "Lingering Potion of Healing",
     "buy": 1000,
@@ -4380,7 +4380,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 4,
     "item": "Lingering Potion of Weakness",
     "buy": 800,
@@ -4389,7 +4389,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 4,
     "item": "Lingering Potion of Slowness",
     "buy": 600,
@@ -4398,7 +4398,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 9",
+    "location": "Blue Door",
     "buy_count": 4,
     "item": "Lingering Potion of Poison",
     "buy": 1000,
@@ -4407,7 +4407,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Piglin Egg",
     "buy": 8000,
@@ -4416,7 +4416,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Piglin Brute Egg",
     "buy": 8000,
@@ -4425,7 +4425,7 @@
   },
   {
     "floor": 7,
-    "location": "Door 10",
+    "location": "Yellow Door",
     "buy_count": 1,
     "item": "Hoglin Egg",
     "buy": 8000,

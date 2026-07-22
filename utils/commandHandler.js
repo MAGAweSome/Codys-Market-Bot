@@ -45,9 +45,14 @@ function handleMarketCommand(messageText, marketData) {
                `\`\`\`\n` +
                `### __Core Search Commands__\n` +
                `• **\`-list <quantity> <item>, <quantity> <item>, ...\`** \n` +
-               `Calculates the total cost and location list for a project build. Automatically rounds up to matching store batch sizes.\n` +
+               `Calculates total purchasing cost for a build project. Automatically rounds UP to store batch sizes.\n` +
                `\`\`\`text\n` +
-               `-list 32 cobblestone, 10 obsidian, 5 smooth stone\n` +
+               `-list 32 cobblestone, 10 obsidian\n` +
+               `\`\`\`\n` +
+               `• **\`-selllist <quantity> <item>, <quantity> <item>, ...\`** \n` +
+               `Calculates total payout for selling items. Automatically clamps DOWN to exact accepted batch sizes.\n` +
+               `\`\`\`text\n` +
+               `-selllist 13 cobblestone, 25 obsidian\n` +
                `\`\`\`\n` +
                `• **\`-find <item>\`** \n` +
                `Lists all matching items alongside their locations and full trade values.\n` +
@@ -78,33 +83,15 @@ function handleMarketCommand(messageText, marketData) {
                `\`\`\`\n` +
                `### __Market Analytics & Lists__\n` +
                `• **\`-topbuy [elements]\`** \n` +
-               `Displays the top 5 most expensive non-element items. Add \`elements\` to see top 10 items including currency elements.\n` +
-               `\`\`\`text\n` +
-               `-topbuy\n` +
-               `-topbuy elements\n` +
-               `\`\`\`\n` +
+               `Displays top 5 luxury items to buy. Add \`elements\` for top 10 including elements.\n` +
                `• **\`-topsell [elements]\`** \n` +
-               `Displays the top 5 highest-paying non-element items to sell. Add \`elements\` to see top 10 items including currency elements.\n` +
-               `\`\`\`text\n` +
-               `-topsell\n` +
-               `-topsell elements\n` +
-               `\`\`\`\n` +
+               `Displays top 5 highest-paying items to sell. Add \`elements\` for top 10 including elements.\n` +
                `• **\`-cheapbuy\`** \n` +
-               `Displays the top 5 lowest cost budget building blocks you can buy.\n` +
-               `\`\`\`text\n` +
-               `-cheapbuy\n` +
-               `\`\`\`\n` +
+               `Displays top 5 lowest cost budget building blocks.\n` +
                `• **\`-summary <category>\`** \n` +
                `Groups matching items to calculate price trends and database averages.\n` +
-               `\`\`\`text\n` +
-               `-summary potion\n` +
-               `-summary trim\n` +
-               `\`\`\`\n` +
                `• **\`-stats\`** \n` +
-               `Shows a total summary metric of the market data configuration.\n` +
-               `\`\`\`text\n` +
-               `-stats\n` +
-               `\`\`\``;
+               `Shows a total summary metric of the market database configuration.`;
     }
 
     // COMMAND: -list <quantity> <item>, <quantity> <item>, ...
@@ -163,7 +150,6 @@ function handleMarketCommand(messageText, marketData) {
             const nameDisplay = getItemDisplayName(marketItem);
             const locationStr = `F${marketItem.floor} (${marketItem.location})`;
             
-            // Push structured data for the text table alignment
             tableRows.push({
                 item: nameDisplay,
                 location: locationStr,
@@ -176,18 +162,15 @@ function handleMarketCommand(messageText, marketData) {
         let finalResponse = `## 🧾 Project Materials Invoice\n\n`;
         
         if (tableRows.length > 0) {
-            // Calculate column padding dynamically based on longest text strings
             const maxItem = Math.max(...tableRows.map(r => r.item.length), 4);
             const maxLoc = Math.max(...tableRows.map(r => r.location.length), 8);
             const maxReq = Math.max(...tableRows.map(r => r.req.length), 4);
             const maxBuy = Math.max(...tableRows.map(r => r.buy.length), 4);
 
-            // Construct headers
             let tableText = `\`\`\`text\n` +
                 `${'Item'.padEnd(maxItem)} | ${'Location'.padEnd(maxLoc)} | ${'Req'.padEnd(maxReq)} | ${'Buy'.padEnd(maxBuy)} | Cost\n` +
                 `${'-'.repeat(maxItem)}-+-${'-'.repeat(maxLoc)}-+-${'-'.repeat(maxReq)}-+-${'-'.repeat(maxBuy)}-+----------\n`;
 
-            // Append each item row matching our spacing constraints
             for (const r of tableRows) {
                 tableText += `${r.item.padEnd(maxItem)} | ${r.location.padEnd(maxLoc)} | ${r.req.padEnd(maxReq)} | ${r.buy.padEnd(maxBuy)} | ${r.cost}\n`;
             }
@@ -204,6 +187,115 @@ function handleMarketCommand(messageText, marketData) {
             finalResponse += `---\n### Total Estimated Cost: **${formatMoney(totalPrice)}**`;
         } else if (!missingItemsText) {
             return `❌ No valid items could be parsed from your list request.`;
+        }
+
+        return finalResponse;
+    }
+
+    // COMMAND: -selllist <quantity> <item>, <quantity> <item>, ...
+    if (command === '-selllist') {
+        if (!args) return `❌ **Usage Error!** Provide a comma-separated list of items to sell.\nExample: \`-selllist 13 cobblestone, 25 obsidian\``;
+
+        const rawEntries = args.split(',');
+        let totalPayout = 0;
+        let tableRows = [];
+        let missingItemsText = '';
+
+        for (const rawEntry of rawEntries) {
+            const cleanEntry = rawEntry.trim();
+            if (!cleanEntry) continue;
+
+            const match = cleanEntry.match(/^(\d+)\s+(.+)$/);
+            if (!match) {
+                missingItemsText += `• Could not parse entry: "\`${cleanEntry}\`" (Make sure it starts with a number, e.g., \`13 Cobblestone\`)\n`;
+                continue;
+            }
+
+            const heldQty = parseInt(match[1], 10);
+            const searchItemName = match[2].trim();
+
+            const searchTokens = tokenizeAndClean(searchItemName);
+            let itemMatches = marketData.filter(entry => {
+                const targetName = entry.sell_item || entry.item;
+                const itemTokens = tokenizeAndClean(targetName);
+                return entry.sell > 0 && searchTokens.every(token => 
+                    itemTokens.some(itemToken => itemToken.includes(token) || token.includes(itemToken))
+                );
+            });
+
+            const exact = itemMatches.find(entry => {
+                const targetName = entry.sell_item || entry.item;
+                return targetName.toLowerCase() === searchItemName.toLowerCase();
+            });
+            if (exact) itemMatches = [exact];
+
+            if (itemMatches.length === 0) {
+                missingItemsText += `• **${searchItemName}** is not sellable or couldn't be found in the database.\n`;
+                continue;
+            }
+
+            if (itemMatches.length > 1) {
+                missingItemsText += `• **${searchItemName}** matched multiple sellable items. Please be more specific!\n`;
+                continue;
+            }
+
+            const marketItem = itemMatches[0];
+            const batchSize = marketItem.sell_count || 1;
+            const unitPayout = marketItem.sell;
+
+            // Clamp DOWN using Math.floor to only count complete batches
+            const batchesPossible = Math.floor(heldQty / batchSize);
+
+            if (batchesPossible === 0) {
+                missingItemsText += `• **${searchItemName}**: You offered **${heldQty}**, but the stall requires a minimum batch of **${batchSize}** to sell.\n`;
+                continue;
+            }
+
+            const actualQtySold = batchesPossible * batchSize;
+            const itemPayout = batchesPossible * unitPayout;
+
+            totalPayout += itemPayout;
+
+            const nameDisplay = getItemDisplayName(marketItem);
+            const locationStr = `F${marketItem.floor} (${marketItem.location})`;
+
+            tableRows.push({
+                item: nameDisplay,
+                location: locationStr,
+                held: heldQty.toString(),
+                sold: actualQtySold.toString(),
+                payout: formatMoney(itemPayout)
+            });
+        }
+
+        let finalResponse = `## 💰 Sales Payout Invoice\n\n`;
+
+        if (tableRows.length > 0) {
+            const maxItem = Math.max(...tableRows.map(r => r.item.length), 4);
+            const maxLoc = Math.max(...tableRows.map(r => r.location.length), 8);
+            const maxHeld = Math.max(...tableRows.map(r => r.held.length), 4);
+            const maxSold = Math.max(...tableRows.map(r => r.sold.length), 4);
+
+            let tableText = `\`\`\`text\n` +
+                `${'Item'.padEnd(maxItem)} | ${'Location'.padEnd(maxLoc)} | ${'Held'.padEnd(maxHeld)} | ${'Sold'.padEnd(maxSold)} | Payout\n` +
+                `${'-'.repeat(maxItem)}-+-${'-'.repeat(maxLoc)}-+-${'-'.repeat(maxHeld)}-+-${'-'.repeat(maxSold)}-+----------\n`;
+
+            for (const r of tableRows) {
+                tableText += `${r.item.padEnd(maxItem)} | ${r.location.padEnd(maxLoc)} | ${r.held.padEnd(maxHeld)} | ${r.sold.padEnd(maxSold)} | ${r.payout}\n`;
+            }
+            tableText += `\`\`\``;
+
+            finalResponse += `### 🏷️ __Drop-Off Locations__\n${tableText}\n`;
+        }
+
+        if (missingItemsText) {
+            finalResponse += `### ⚠️ __Issues / Unsold Entries__\n${missingItemsText}\n`;
+        }
+
+        if (tableRows.length > 0) {
+            finalResponse += `---\n### Total Estimated Payout: **${formatMoney(totalPayout)}**`;
+        } else if (!missingItemsText) {
+            return `❌ No valid items could be parsed from your sell list request.`;
         }
 
         return finalResponse;

@@ -7,15 +7,28 @@ const adminSessions = {};
 const SESSION_TIMEOUT_MS = 300000;
 
 /**
+ * Normalizes location input so "red", "red door", and "door red" all store as "Red Door"
+ */
+function normalizeAdminLocationInput(input) {
+    if (!input) return '';
+    let clean = input.trim().toLowerCase();
+
+    // Remove "door" whether it appears at the start or end
+    clean = clean.replace(/^door\s+/i, '').replace(/\s+door$/i, '').trim();
+
+    // Capitalize the color name cleanly and append "Door"
+    const capitalizedColor = clean.replace(/\b\w/g, c => c.toUpperCase());
+    return `${capitalizedColor} Door`;
+}
+
+/**
  * Sets or resets the inactivity timer for an admin user session
  */
 function resetSessionTimer(userId, message, actionName) {
-    // If a timer already exists for this user, clear it first
     if (adminSessions[userId] && adminSessions[userId].timerId) {
         clearTimeout(adminSessions[userId].timerId);
     }
 
-    // Start a new 5-minute timeout
     const timerId = setTimeout(async () => {
         if (adminSessions[userId]) {
             delete adminSessions[userId];
@@ -27,7 +40,6 @@ function resetSessionTimer(userId, message, actionName) {
         }
     }, SESSION_TIMEOUT_MS);
 
-    // Save the timer ID to the active session profile
     if (adminSessions[userId]) {
         adminSessions[userId].timerId = timerId;
     }
@@ -41,7 +53,6 @@ async function handleAdminChatFlow(message, marketData) {
     // Let users reset or cancel at any time
     if (lowerText === 'cancel') {
         if (adminSessions[userId]) {
-            // Make sure to clean up the running timeout before deleting the session
             if (adminSessions[userId].timerId) {
                 clearTimeout(adminSessions[userId].timerId);
             }
@@ -108,13 +119,14 @@ async function handleAdminChatFlow(message, marketData) {
             if (isNaN(floor)) return message.reply('❌ Please enter a valid number for the floor level.');
             session.data.floor = floor;
             session.step = 'location';
-            return message.reply('What **location / Door number** is this stall on? (e.g., `Door 5` or `Stall A`)');
+            return message.reply('What **location / Door color** is this stall? (e.g., `Red`, `Red Door`, or `Door Red`)');
         }
 
         if (session.step === 'location') {
-            session.data.location = text;
+            // Automatically normalizes "red", "red door", or "door red" -> "Red Door"
+            session.data.location = normalizeAdminLocationInput(text);
             session.step = 'buy_count';
-            return message.reply('What is the **buy count**? (This is how many they get when purchasing, e.g., `64` or `16`)');
+            return message.reply(`Saved location as **${session.data.location}**!\n\nWhat is the **buy count**? (This is how many they get when purchasing, e.g., \`64\` or \`16\`)`);
         }
 
         if (session.step === 'buy_count') {
@@ -174,7 +186,6 @@ async function handleAdminChatFlow(message, marketData) {
                 entry.item.toLowerCase() === session.data.item.toLowerCase()
             );
 
-            // Clean up the active timeout before finishing and deleting session object
             if (session.timerId) clearTimeout(session.timerId);
 
             if (exists) {
@@ -199,13 +210,13 @@ async function handleAdminChatFlow(message, marketData) {
             if (isNaN(floor)) return message.reply('❌ Please enter a valid number for the floor level.');
             session.data.floor = floor;
             session.step = 'find_location';
-            return message.reply('What **location / Door number** is the item at? (e.g., `Door 4`)');
+            return message.reply('What **location / Door color** is the item at? (e.g., `Red`, `Red Door`, or `Door Red`)');
         }
 
         if (session.step === 'find_location') {
-            session.data.location = text;
+            session.data.location = normalizeAdminLocationInput(text);
             session.step = 'find_item';
-            return message.reply('What is the **item name** you want to update?');
+            return message.reply(`Searching on **Floor ${session.data.floor} (${session.data.location})**...\nWhat is the **item name** you want to update?`);
         }
 
         if (session.step === 'find_item') {
@@ -263,6 +274,8 @@ async function handleAdminChatFlow(message, marketData) {
 
             if (lowerText === 'n/a' && (targetField === 'sub_name' || targetField === 'sell_item')) {
                 newValue = undefined;
+            } else if (targetField === 'location') {
+                newValue = normalizeAdminLocationInput(text);
             } else if (['floor', 'buy', 'sell', 'buy_count', 'sell_count'].includes(targetField)) {
                 newValue = parseInt(text, 10);
                 if (isNaN(newValue)) return message.reply(`❌ Please provide a valid number for \`${targetField}\`.`);
@@ -311,13 +324,13 @@ async function handleAdminChatFlow(message, marketData) {
             if (isNaN(floor)) return message.reply('❌ Please enter a valid number for the floor level.');
             session.data.floor = floor;
             session.step = 'find_location';
-            return message.reply('What **location / Door number** is the item at? (e.g., `Door 4`)');
+            return message.reply('What **location / Door color** is the item at? (e.g., `Red`, `Red Door`, or `Door Red`)');
         }
 
         if (session.step === 'find_location') {
-            session.data.location = text;
+            session.data.location = normalizeAdminLocationInput(text);
             session.step = 'find_item';
-            return message.reply('What is the **item name** you want to delete?');
+            return message.reply(`Searching on **Floor ${session.data.floor} (${session.data.location})**...\nWhat is the **item name** you want to delete?`);
         }
 
         if (session.step === 'find_item') {

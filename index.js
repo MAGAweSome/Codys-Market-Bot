@@ -5,6 +5,7 @@ const { findExactOrPartialMatches, findCloseMatches } = require('./utils/marketM
 const { handleMarketCommand } = require('./utils/commandHandler');
 const { formatMoney, formatItemQuantityName } = require('./utils/stringHelper');
 const { handleAdminChatFlow } = require('./utils/admin/adminChatFlow');
+require('dotenv').config();
 
 const STATUS_CHANNEL_ID = process.env.STATUS_CHANNEL_ID;
 const MARKET_CHANNEL_ID = process.env.MARKET_CHANNEL_ID;
@@ -95,6 +96,7 @@ client.on('messageCreate', async (message) => {
     }
     // ---------------------------------
 
+    // Primary Item Match Found
     if (matches.length === 1) {
         const foundItem = matches[0];
         
@@ -107,7 +109,7 @@ client.on('messageCreate', async (message) => {
             : formattedBuyItem;
 
         // Check if the item name ends in "s" to decide between "is" or "are"
-        const verb = nameWithSub.endsWith('s') || nameWithSub.endsWith(')') && nameWithSub.slice(0, nameWithSub.indexOf(' (')).endsWith('s') ? 'are' : 'is';
+        const verb = nameWithSub.endsWith('s') || (nameWithSub.endsWith(')') && nameWithSub.slice(0, nameWithSub.indexOf(' (')).endsWith('s')) ? 'are' : 'is';
 
         const sellCount = foundItem.sell_count || 1;
         const baseSellItem = foundItem.sell_item || foundItem.item;
@@ -125,12 +127,35 @@ client.on('messageCreate', async (message) => {
         return;
     }
 
+    // Multiple Primary Item Matches
     if (matches.length > 1) {
         const matchListText = matches.map(entry => `• **${entry.item}** (Floor ${entry.floor})`).join('\n');
         await message.reply(`🔍 I found multiple items matching your search for "**${message.content}**":\n\n${matchListText}\n\nPlease re-type your request with the exact name of the item you want!`);
         return;
     }
 
+    // --- REVERSE / TRADE LOOKUP ENGINE ---
+    // If no direct item name matched, check if userInput matches any entry's sell_item field
+    const tradeMatches = marketData.filter(entry => {
+        if (!entry.sell_item) return false;
+        return entry.sell_item.toLowerCase().includes(userInput.toLowerCase());
+    });
+
+    if (tradeMatches.length > 0) {
+        const tradeListText = tradeMatches.map(entry => {
+            const buyCount = entry.buy_count || 1;
+            const sellCount = entry.sell_count || 1;
+            const formattedSellItem = formatItemQuantityName(entry.sell_item, sellCount);
+
+            return `• **${entry.item}** (Floor ${entry.floor}, ${entry.location}) -> Buy: **${buyCount}** for **${formatMoney(entry.buy)}** | Sell: **${sellCount} for ${formattedSellItem}** **${formatMoney(entry.sell)}**`;
+        }).join('\n');
+
+        await message.reply(`🔍 **"${message.content}"** is accepted in the following market trades:\n\n${tradeListText}`);
+        return;
+    }
+    // ------------------------------------
+
+    // Fallback: Close match suggestions or error message
     const suggestions = findCloseMatches(userInput, marketData);
 
     if (suggestions.length > 0) {
